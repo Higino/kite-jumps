@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBA604A52B3C341F0034FC4E /* BigKiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604A42B3C341F0034FC4E /* BigKiteApp.swift */; };
+		BBA604A72B3C341F0034FC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604A62B3C341F0034FC4E /* ContentView.swift */; };
+		BBA604A92B3C34200034FC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA604A82B3C34200034FC4E /* Assets.xcassets */; };
+		BBA604AC2B3C34200034FC4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA604AB2B3C34200034FC4E /* Preview Assets.xcassets */; };
+		BBA604B62B3C34200034FC4E /* BigKiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604B52B3C34200034FC4E /* BigKiteTests.swift */; };
+		BBA604C02B3C34200034FC4E /* BigKiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604BF2B3C34200034FC4E /* BigKiteUITests.swift */; };
+		BBA604C22B3C34200034FC4E /* BigKiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604C12B3C34200034FC4E /* BigKiteUITestsLaunchTests.swift */; };
+		BBA604C82B3C34210034FC4E /* BigKite Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BBA604C72B3C34210034FC4E /* BigKite Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBA604CD2B3C34210034FC4E /* BigKiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604CC2B3C34210034FC4E /* BigKiteApp.swift */; };
+		BBA604CF2B3C34210034FC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604CE2B3C34210034FC4E /* ContentView.swift */; };
+		BBA604D12B3C34210034FC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA604D02B3C34210034FC4E /* Assets.xcassets */; };
+		BBA604D42B3C34210034FC4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA604D32B3C34210034FC4E /* Preview Assets.xcassets */; };
+		BBA604DE2B3C34210034FC4E /* BigKite_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604DD2B3C34210034FC4E /* BigKite_Watch_AppTests.swift */; };
+		BBA604E82B3C34210034FC4E /* BigKite_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604E72B3C34210034FC4E /* BigKite_Watch_AppUITests.swift */; };
+		BBA604EA2B3C34210034FC4E /* BigKite_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604E92B3C34210034FC4E /* BigKite_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBA604B22B3C34200034FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA604992B3C341F0034FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA604A02B3C341F0034FC4E;
+			remoteInfo = BigKite;
+		};
+		BBA604BC2B3C34200034FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA604992B3C341F0034FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA604A02B3C341F0034FC4E;
+			remoteInfo = BigKite;
+		};
+		BBA604C92B3C34210034FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA604992B3C341F0034FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA604C62B3C34210034FC4E;
+			remoteInfo = "BigKite Watch App";
+		};
+		BBA604DA2B3C34210034FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA604992B3C341F0034FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA604C62B3C34210034FC4E;
+			remoteInfo = "BigKite Watch App";
+		};
+		BBA604E42B3C34210034FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBA604992B3C341F0034FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA604C62B3C34210034FC4E;
+			remoteInfo = "BigKite Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BBA604F02B3C34210034FC4E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BBA604C82B3C34210034FC4E /* BigKite Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BBA604A12B3C341F0034FC4E /* BigKite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigKite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA604A42B3C341F0034FC4E /* BigKiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKiteApp.swift; sourceTree = "<group>"; };
+		BBA604A62B3C341F0034FC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBA604A82B3C34200034FC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBA604AB2B3C34200034FC4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBA604B12B3C34200034FC4E /* BigKiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigKiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA604B52B3C34200034FC4E /* BigKiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKiteTests.swift; sourceTree = "<group>"; };
+		BBA604BB2B3C34200034FC4E /* BigKiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigKiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA604BF2B3C34200034FC4E /* BigKiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKiteUITests.swift; sourceTree = "<group>"; };
+		BBA604C12B3C34200034FC4E /* BigKiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBA604C72B3C34210034FC4E /* BigKite Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BigKite Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA604CC2B3C34210034FC4E /* BigKiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKiteApp.swift; sourceTree = "<group>"; };
+		BBA604CE2B3C34210034FC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBA604D02B3C34210034FC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBA604D32B3C34210034FC4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBA604D92B3C34210034FC4E /* BigKite Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BigKite Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA604DD2B3C34210034FC4E /* BigKite_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKite_Watch_AppTests.swift; sourceTree = "<group>"; };
+		BBA604E32B3C34210034FC4E /* BigKite Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BigKite Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA604E72B3C34210034FC4E /* BigKite_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKite_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		BBA604E92B3C34210034FC4E /* BigKite_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKite_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBA6049E2B3C341F0034FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604AE2B3C34200034FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604B82B3C34200034FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604C42B3C34210034FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604D62B3C34210034FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604E02B3C34210034FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBA604982B3C341F0034FC4E = {
+			isa = PBXGroup;
+			children = (
+				BBA604A32B3C341F0034FC4E /* BigKite */,
+				BBA604B42B3C34200034FC4E /* BigKiteTests */,
+				BBA604BE2B3C34200034FC4E /* BigKiteUITests */,
+				BBA604CB2B3C34210034FC4E /* BigKite Watch App */,
+				BBA604DC2B3C34210034FC4E /* BigKite Watch AppTests */,
+				BBA604E62B3C34210034FC4E /* BigKite Watch AppUITests */,
+				BBA604A22B3C341F0034FC4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBA604A22B3C341F0034FC4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604A12B3C341F0034FC4E /* BigKite.app */,
+				BBA604B12B3C34200034FC4E /* BigKiteTests.xctest */,
+				BBA604BB2B3C34200034FC4E /* BigKiteUITests.xctest */,
+				BBA604C72B3C34210034FC4E /* BigKite Watch App.app */,
+				BBA604D92B3C34210034FC4E /* BigKite Watch AppTests.xctest */,
+				BBA604E32B3C34210034FC4E /* BigKite Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBA604A32B3C341F0034FC4E /* BigKite */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604A42B3C341F0034FC4E /* BigKiteApp.swift */,
+				BBA604A62B3C341F0034FC4E /* ContentView.swift */,
+				BBA604A82B3C34200034FC4E /* Assets.xcassets */,
+				BBA604AA2B3C34200034FC4E /* Preview Content */,
+			);
+			path = BigKite;
+			sourceTree = "<group>";
+		};
+		BBA604AA2B3C34200034FC4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604AB2B3C34200034FC4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBA604B42B3C34200034FC4E /* BigKiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604B52B3C34200034FC4E /* BigKiteTests.swift */,
+			);
+			path = BigKiteTests;
+			sourceTree = "<group>";
+		};
+		BBA604BE2B3C34200034FC4E /* BigKiteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604BF2B3C34200034FC4E /* BigKiteUITests.swift */,
+				BBA604C12B3C34200034FC4E /* BigKiteUITestsLaunchTests.swift */,
+			);
+			path = BigKiteUITests;
+			sourceTree = "<group>";
+		};
+		BBA604CB2B3C34210034FC4E /* BigKite Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604CC2B3C34210034FC4E /* BigKiteApp.swift */,
+				BBA604CE2B3C34210034FC4E /* ContentView.swift */,
+				BBA604D02B3C34210034FC4E /* Assets.xcassets */,
+				BBA604D22B3C34210034FC4E /* Preview Content */,
+			);
+			path = "BigKite Watch App";
+			sourceTree = "<group>";
+		};
+		BBA604D22B3C34210034FC4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604D32B3C34210034FC4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBA604DC2B3C34210034FC4E /* BigKite Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604DD2B3C34210034FC4E /* BigKite_Watch_AppTests.swift */,
+			);
+			path = "BigKite Watch AppTests";
+			sourceTree = "<group>";
+		};
+		BBA604E62B3C34210034FC4E /* BigKite Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBA604E72B3C34210034FC4E /* BigKite_Watch_AppUITests.swift */,
+				BBA604E92B3C34210034FC4E /* BigKite_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "BigKite Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBA604A02B3C341F0034FC4E /* BigKite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA604F12B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite" */;
+			buildPhases = (
+				BBA6049D2B3C341F0034FC4E /* Sources */,
+				BBA6049E2B3C341F0034FC4E /* Frameworks */,
+				BBA6049F2B3C341F0034FC4E /* Resources */,
+				BBA604F02B3C34210034FC4E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBA604CA2B3C34210034FC4E /* PBXTargetDependency */,
+			);
+			name = BigKite;
+			productName = BigKite;
+			productReference = BBA604A12B3C341F0034FC4E /* BigKite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBA604B02B3C34200034FC4E /* BigKiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA604F42B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKiteTests" */;
+			buildPhases = (
+				BBA604AD2B3C34200034FC4E /* Sources */,
+				BBA604AE2B3C34200034FC4E /* Frameworks */,
+				BBA604AF2B3C34200034FC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBA604B32B3C34200034FC4E /* PBXTargetDependency */,
+			);
+			name = BigKiteTests;
+			productName = BigKiteTests;
+			productReference = BBA604B12B3C34200034FC4E /* BigKiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBA604BA2B3C34200034FC4E /* BigKiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA604F72B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKiteUITests" */;
+			buildPhases = (
+				BBA604B72B3C34200034FC4E /* Sources */,
+				BBA604B82B3C34200034FC4E /* Frameworks */,
+				BBA604B92B3C34200034FC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBA604BD2B3C34200034FC4E /* PBXTargetDependency */,
+			);
+			name = BigKiteUITests;
+			productName = BigKiteUITests;
+			productReference = BBA604BB2B3C34200034FC4E /* BigKiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BBA604C62B3C34210034FC4E /* BigKite Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA604ED2B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite Watch App" */;
+			buildPhases = (
+				BBA604C32B3C34210034FC4E /* Sources */,
+				BBA604C42B3C34210034FC4E /* Frameworks */,
+				BBA604C52B3C34210034FC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BigKite Watch App";
+			productName = "BigKite Watch App";
+			productReference = BBA604C72B3C34210034FC4E /* BigKite Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBA604D82B3C34210034FC4E /* BigKite Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA604FA2B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite Watch AppTests" */;
+			buildPhases = (
+				BBA604D52B3C34210034FC4E /* Sources */,
+				BBA604D62B3C34210034FC4E /* Frameworks */,
+				BBA604D72B3C34210034FC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBA604DB2B3C34210034FC4E /* PBXTargetDependency */,
+			);
+			name = "BigKite Watch AppTests";
+			productName = "BigKite Watch AppTests";
+			productReference = BBA604D92B3C34210034FC4E /* BigKite Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBA604E22B3C34210034FC4E /* BigKite Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA604FD2B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite Watch AppUITests" */;
+			buildPhases = (
+				BBA604DF2B3C34210034FC4E /* Sources */,
+				BBA604E02B3C34210034FC4E /* Frameworks */,
+				BBA604E12B3C34210034FC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBA604E52B3C34210034FC4E /* PBXTargetDependency */,
+			);
+			name = "BigKite Watch AppUITests";
+			productName = "BigKite Watch AppUITests";
+			productReference = BBA604E32B3C34210034FC4E /* BigKite Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBA604992B3C341F0034FC4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					BBA604A02B3C341F0034FC4E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					BBA604B02B3C34200034FC4E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = BBA604A02B3C341F0034FC4E;
+					};
+					BBA604BA2B3C34200034FC4E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = BBA604A02B3C341F0034FC4E;
+					};
+					BBA604C62B3C34210034FC4E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					BBA604D82B3C34210034FC4E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = BBA604C62B3C34210034FC4E;
+					};
+					BBA604E22B3C34210034FC4E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = BBA604C62B3C34210034FC4E;
+					};
+				};
+			};
+			buildConfigurationList = BBA6049C2B3C341F0034FC4E /* Build configuration list for PBXProject "BigKite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBA604982B3C341F0034FC4E;
+			productRefGroup = BBA604A22B3C341F0034FC4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBA604A02B3C341F0034FC4E /* BigKite */,
+				BBA604B02B3C34200034FC4E /* BigKiteTests */,
+				BBA604BA2B3C34200034FC4E /* BigKiteUITests */,
+				BBA604C62B3C34210034FC4E /* BigKite Watch App */,
+				BBA604D82B3C34210034FC4E /* BigKite Watch AppTests */,
+				BBA604E22B3C34210034FC4E /* BigKite Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBA6049F2B3C341F0034FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604AC2B3C34200034FC4E /* Preview Assets.xcassets in Resources */,
+				BBA604A92B3C34200034FC4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604AF2B3C34200034FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604B92B3C34200034FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604C52B3C34210034FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604D42B3C34210034FC4E /* Preview Assets.xcassets in Resources */,
+				BBA604D12B3C34210034FC4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604D72B3C34210034FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604E12B3C34210034FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBA6049D2B3C341F0034FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604A72B3C341F0034FC4E /* ContentView.swift in Sources */,
+				BBA604A52B3C341F0034FC4E /* BigKiteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604AD2B3C34200034FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604B62B3C34200034FC4E /* BigKiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604B72B3C34200034FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604C22B3C34200034FC4E /* BigKiteUITestsLaunchTests.swift in Sources */,
+				BBA604C02B3C34200034FC4E /* BigKiteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604C32B3C34210034FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604CF2B3C34210034FC4E /* ContentView.swift in Sources */,
+				BBA604CD2B3C34210034FC4E /* BigKiteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604D52B3C34210034FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604DE2B3C34210034FC4E /* BigKite_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA604DF2B3C34210034FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA604EA2B3C34210034FC4E /* BigKite_Watch_AppUITestsLaunchTests.swift in Sources */,
+				BBA604E82B3C34210034FC4E /* BigKite_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBA604B32B3C34200034FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA604A02B3C341F0034FC4E /* BigKite */;
+			targetProxy = BBA604B22B3C34200034FC4E /* PBXContainerItemProxy */;
+		};
+		BBA604BD2B3C34200034FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA604A02B3C341F0034FC4E /* BigKite */;
+			targetProxy = BBA604BC2B3C34200034FC4E /* PBXContainerItemProxy */;
+		};
+		BBA604CA2B3C34210034FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA604C62B3C34210034FC4E /* BigKite Watch App */;
+			targetProxy = BBA604C92B3C34210034FC4E /* PBXContainerItemProxy */;
+		};
+		BBA604DB2B3C34210034FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA604C62B3C34210034FC4E /* BigKite Watch App */;
+			targetProxy = BBA604DA2B3C34210034FC4E /* PBXContainerItemProxy */;
+		};
+		BBA604E52B3C34210034FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA604C62B3C34210034FC4E /* BigKite Watch App */;
+			targetProxy = BBA604E42B3C34210034FC4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BBA604EB2B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBA604EC2B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BBA604EE2B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BigKite Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = eureksys.BigKite;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		BBA604EF2B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BigKite Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = eureksys.BigKite;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		BBA604F22B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BigKite/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBA604F32B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BigKite/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBA604F52B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigKite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BigKite";
+			};
+			name = Debug;
+		};
+		BBA604F62B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigKite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BigKite";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBA604F82B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BigKite;
+			};
+			name = Debug;
+		};
+		BBA604F92B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eureksys.BigKiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BigKite;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBA604FB2B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eureksys.BigKite-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigKite Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BigKite Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		BBA604FC2B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eureksys.BigKite-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigKite Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BigKite Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		BBA604FE2B3C34210034FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eureksys.BigKite-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BigKite Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		BBA604FF2B3C34210034FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G8KKM83F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eureksys.BigKite-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BigKite Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBA6049C2B3C341F0034FC4E /* Build configuration list for PBXProject "BigKite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604EB2B3C34210034FC4E /* Debug */,
+				BBA604EC2B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA604ED2B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604EE2B3C34210034FC4E /* Debug */,
+				BBA604EF2B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA604F12B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604F22B3C34210034FC4E /* Debug */,
+				BBA604F32B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA604F42B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604F52B3C34210034FC4E /* Debug */,
+				BBA604F62B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA604F72B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604F82B3C34210034FC4E /* Debug */,
+				BBA604F92B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA604FA2B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604FB2B3C34210034FC4E /* Debug */,
+				BBA604FC2B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA604FD2B3C34210034FC4E /* Build configuration list for PBXNativeTarget "BigKite Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA604FE2B3C34210034FC4E /* Debug */,
+				BBA604FF2B3C34210034FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBA604992B3C341F0034FC4E /* Project object */;
+}
