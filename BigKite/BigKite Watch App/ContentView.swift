@@ -16,7 +16,7 @@ struct ContentView: View {
             Color.black // Set the background color to black
             
             VStack {
-                Text("Last Height!")
+                Text("Last Jump!")
                     .font(.title)
                     .foregroundColor(.white) // Set text color to white
                 
