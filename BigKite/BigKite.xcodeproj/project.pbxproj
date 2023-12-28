@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2C999E2B3DD69000080654 /* BKLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C999D2B3DD69000080654 /* BKLocationManagerDelegate.swift */; };
+		BB2C99A02B3DD8ED00080654 /* BKLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C999F2B3DD8ED00080654 /* BKLocationManagerDelegate.swift */; };
 		BBA604A52B3C341F0034FC4E /* BigKiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604A42B3C341F0034FC4E /* BigKiteApp.swift */; };
 		BBA604A72B3C341F0034FC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA604A62B3C341F0034FC4E /* ContentView.swift */; };
 		BBA604A92B3C34200034FC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA604A82B3C34200034FC4E /* Assets.xcassets */; };
@@ -77,6 +79,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB2C99992B3D96E700080654 /* BigKite-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BigKite-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BB2C999A2B3D998900080654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB2C999B2B3D9B8F00080654 /* BigKite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BigKite.entitlements; sourceTree = "<group>"; };
+		BB2C999D2B3DD69000080654 /* BKLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		BB2C999F2B3DD8ED00080654 /* BKLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKLocationManagerDelegate.swift; sourceTree = "<group>"; };
 		BBA604A12B3C341F0034FC4E /* BigKite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigKite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA604A42B3C341F0034FC4E /* BigKiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigKiteApp.swift; sourceTree = "<group>"; };
 		BBA604A62B3C341F0034FC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,7 +181,10 @@
 		BBA604A32B3C341F0034FC4E /* BigKite */ = {
 			isa = PBXGroup;
 			children = (
+				BB2C999B2B3D9B8F00080654 /* BigKite.entitlements */,
+				BB2C999A2B3D998900080654 /* Info.plist */,
 				BBA604A42B3C341F0034FC4E /* BigKiteApp.swift */,
+				BB2C999D2B3DD69000080654 /* BKLocationManagerDelegate.swift */,
 				BBA604A62B3C341F0034FC4E /* ContentView.swift */,
 				BBA604A82B3C34200034FC4E /* Assets.xcassets */,
 				BBA604AA2B3C34200034FC4E /* Preview Content */,
@@ -210,8 +220,10 @@
 		BBA604CB2B3C34210034FC4E /* BigKite Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				BB2C99992B3D96E700080654 /* BigKite-Watch-App-Info.plist */,
 				BBA604CC2B3C34210034FC4E /* BigKiteApp.swift */,
 				BBA604CE2B3C34210034FC4E /* ContentView.swift */,
+				BB2C999F2B3DD8ED00080654 /* BKLocationManagerDelegate.swift */,
 				BBA604D02B3C34210034FC4E /* Assets.xcassets */,
 				BBA604D22B3C34210034FC4E /* Preview Content */,
 			);
@@ -467,6 +479,7 @@
 			files = (
 				BBA604A72B3C341F0034FC4E /* ContentView.swift in Sources */,
 				BBA604A52B3C341F0034FC4E /* BigKiteApp.swift in Sources */,
+				BB2C999E2B3DD69000080654 /* BKLocationManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2C99A02B3DD8ED00080654 /* BKLocationManagerDelegate.swift in Sources */,
 				BBA604CF2B3C34210034FC4E /* ContentView.swift in Sources */,
 				BBA604CD2B3C34210034FC4E /* BigKiteApp.swift in Sources */,
 			);
@@ -671,6 +685,7 @@
 				DEVELOPMENT_TEAM = 2G8KKM83F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BigKite-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = eureksys.BigKite;
@@ -704,6 +719,7 @@
 				DEVELOPMENT_TEAM = 2G8KKM83F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BigKite-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = eureksys.BigKite;
@@ -732,12 +748,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_ENTITLEMENTS = BigKite/BigKite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BigKite/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G8KKM83F2;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BigKite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -766,12 +786,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_ENTITLEMENTS = BigKite/BigKite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BigKite/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G8KKM83F2;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BigKite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BigKite;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -2,10 +2,13 @@ import CoreLocation
 
 
 class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDelegate {
-    @Published var userLocation: String = "N/A"
+    @Published var userLocation: Double = -999999
     private var locationManager: CLLocationManager?
     @Published var authorizationStatus: CLAuthorizationStatus?
     @Published var isLocationServicesEnabled = false
+    @Published var altitude: Double = -999999
+    private var lastAltitude : Double?
+    private var lastUserLocation : Double?
 
     override init() {
         super.init()
@@ -28,8 +31,12 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            let altitude = location.ellipsoidalAltitude//location.altitude
-            userLocation = "Altitude: \(String(format: "%.2f", altitude)) meters"
+            if let previousAltitude = lastAltitude, let previousUserLocation = lastUserLocation{
+                altitude = previousAltitude - location.altitude
+                userLocation = previousUserLocation - location.ellipsoidalAltitude
+            }
+            lastAltitude = location.altitude
+            lastUserLocation = location.ellipsoidalAltitude
         }
     }
 
