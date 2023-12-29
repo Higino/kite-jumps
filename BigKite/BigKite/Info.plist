@@ -12,8 +12,6 @@
 	<array>
 		<string>gps</string>
 		<string>location-services</string>
-		<string>accelerometer</string>
-		<string>magnetometer</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

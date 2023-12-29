@@ -32,7 +32,7 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
         if CMAltimeter.isRelativeAltitudeAvailable() {
             altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, error in
                 if let altitudeData = data {
-                    self?.relativeAltitude = String(format: "%.2f", altitudeData.relativeAltitude.doubleValue)
+                    self?.relativeAltitude = String(format: "%.3f", altitudeData.relativeAltitude.doubleValue)
                 }
             }
         } else {
@@ -41,7 +41,7 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
         if CMAltimeter.isAbsoluteAltitudeAvailable() {
             altimeter.startAbsoluteAltitudeUpdates(to: .main) { [weak self] data, error in
                 if let altitudeData = data {
-                    self?.absoluteAltitude = String(format: "%.2f",altitudeData.altitude)
+                    self?.absoluteAltitude = String(format: "%.3f",altitudeData.altitude)
                 }
             }
         } else {
