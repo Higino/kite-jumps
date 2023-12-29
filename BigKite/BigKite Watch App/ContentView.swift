@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct ContentView: View {
     @ObservedObject private var locationManagerDelegate = BKLocationManagerDelegate()
 
@@ -9,15 +8,14 @@ struct ContentView: View {
             Color.black
             
             VStack {
-                Text("Height diff since last reading:")
-                    .font(.title)
-                    .foregroundColor(.white)
-                
                 if locationManagerDelegate.isLocationServicesEnabled {
                     if let authorizationStatus = locationManagerDelegate.authorizationStatus {
                         switch authorizationStatus {
                         case .authorizedWhenInUse, .authorizedAlways:
-                            Text("\(String(format: "%.2f", locationManagerDelegate.altitude))")
+                            Text("Relative Altitude: \(String(format: "%.2f", locationManagerDelegate.relativeAltitude))")
+                                .font(.title)
+                                .foregroundColor(.white)
+                            Text("Absolute Altitude: \(String(format: "%.2f", locationManagerDelegate.absoluteAltitude))")
                                 .font(.title)
                                 .foregroundColor(.white)
                         case .notDetermined:
@@ -52,11 +50,5 @@ struct ContentView: View {
             .padding()
         }
         .ignoresSafeArea()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

@@ -1,20 +1,43 @@
 import CoreLocation
-
+import CoreMotion
 
 class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDelegate {
-    @Published var userLocation: Double = -999999
     private var locationManager: CLLocationManager?
-    @Published var authorizationStatus: CLAuthorizationStatus?
+    private var lastLocationData: CLLocation?
     @Published var isLocationServicesEnabled = false
-    @Published var altitude: Double = -999999
-    private var lastAltitude : Double?
-    private var lastUserLocation : Double?
+    @Published var authorizationStatus: CLAuthorizationStatus?
+    // Add a new property to store CMAltimeter data
+    @Published var relativeAltitude: Double = -999999
+    @Published var absoluteAltitude: Double = -999999
+    private var altimeter = CMAltimeter()
 
     override init() {
         super.init()
+        setupAltimeter()
         setupLocationManager()
     }
 
+    private func setupAltimeter() {
+        if CMAltimeter.isRelativeAltitudeAvailable() {
+            altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, error in
+                if let altitudeData = data {
+                    self?.relativeAltitude = altitudeData.relativeAltitude.doubleValue
+                }
+            }
+        } else {
+            print("CMAltimeter is not available on this device.")
+        }
+        if CMAltimeter.isAbsoluteAltitudeAvailable() {
+            altimeter.startAbsoluteAltitudeUpdates(to: .main) { [weak self] data, error in
+                if let altitudeData = data {
+                    self?.absoluteAltitude = altitudeData.altitude
+                }
+            }
+        } else {
+            print("CMAltimeter is not available on this device.")
+        }
+    }
+    
     private func setupLocationManager() {
         locationManager = CLLocationManager()
         locationManager?.delegate = self
@@ -31,12 +54,7 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            if let previousAltitude = lastAltitude, let previousUserLocation = lastUserLocation{
-                altitude = previousAltitude - location.altitude
-                userLocation = previousUserLocation - location.ellipsoidalAltitude
-            }
-            lastAltitude = location.altitude
-            lastUserLocation = location.ellipsoidalAltitude
+            lastLocationData = location
         }
     }
 
@@ -57,6 +75,9 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
             break
         case .denied:
             print("Location services are denied.")
+            break
+        case .none:
+            print("Location services are uhnknown.")
             break
         @unknown default:
             print("Unknown authorization status.")
