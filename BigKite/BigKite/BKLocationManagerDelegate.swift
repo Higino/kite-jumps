@@ -7,21 +7,32 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
     @Published var isLocationServicesEnabled = false
     @Published var authorizationStatus: CLAuthorizationStatus?
     // Add a new property to store CMAltimeter data
-    @Published var relativeAltitude: Double = -999999
-    @Published var absoluteAltitude: Double = -999999
+    @Published var relativeAltitude: String = "N/A"
+    @Published var absoluteAltitude: String = "N/A"
     private var altimeter = CMAltimeter()
 
     override init() {
         super.init()
-        setupAltimeter()
         setupLocationManager()
     }
 
+    
+    public func stopMeasurements() {
+        locationManager?.stopUpdatingLocation()
+        altimeter.stopAbsoluteAltitudeUpdates()
+        altimeter.stopRelativeAltitudeUpdates()
+    }
+    public func restartMeasurements() {
+        setupLocationManager()
+        setupAltimeter()
+    }
+     
+    
     private func setupAltimeter() {
         if CMAltimeter.isRelativeAltitudeAvailable() {
             altimeter.startRelativeAltitudeUpdates(to: .main) { [weak self] data, error in
                 if let altitudeData = data {
-                    self?.relativeAltitude = altitudeData.relativeAltitude.doubleValue
+                    self?.relativeAltitude = String(format: "%.2f", altitudeData.relativeAltitude.doubleValue)
                 }
             }
         } else {
@@ -30,16 +41,16 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
         if CMAltimeter.isAbsoluteAltitudeAvailable() {
             altimeter.startAbsoluteAltitudeUpdates(to: .main) { [weak self] data, error in
                 if let altitudeData = data {
-                    self?.absoluteAltitude = altitudeData.altitude
+                    self?.absoluteAltitude = String(format: "%.2f",altitudeData.altitude)
                 }
             }
         } else {
             print("CMAltimeter is not available on this device.")
         }
     }
-    
+
     private func setupLocationManager() {
-        locationManager = CLLocationManager()
+        locationManager = locationManager != nil ? locationManager : CLLocationManager()
         locationManager?.delegate = self
         isLocationServicesEnabled = CLLocationManager.locationServicesEnabled()
 
@@ -51,12 +62,11 @@ class BKLocationManagerDelegate: NSObject, ObservableObject, CLLocationManagerDe
             print("Location services are disabled.")
         }
     }
-
+     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last {
-            lastLocationData = location
-        }
+        lastLocationData = locations.last
     }
+    
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         authorizationStatus = manager.authorizationStatus
